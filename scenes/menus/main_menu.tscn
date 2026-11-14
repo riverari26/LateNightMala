@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://ded0pk46w80w8"]
+
+[ext_resource type="Script" uid="uid://dfrpq1sdcbwfr" path="res://scripts/main_menu.gd" id="1_xqga4"]
+
+[node name="MainMenu" type="Control" unique_id=1543505065]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xqga4")
+
+[node name="Background" type="ColorRect" parent="." unique_id=2108189371]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.32787654, 0.06139615, 0.11806794, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=71148876]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=597720650]
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1134760998]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "LATE NIGHT MALA"
+horizontal_alignment = 1
+
+[node name="SubtitleLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=163811664]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "BOUNCE BACK"
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1879665619]
+custom_minimum_size = Vector2(260, 60)
+layout_mode = 2
+text = "START GAME"

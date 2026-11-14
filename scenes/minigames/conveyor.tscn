@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://h8fv4pu80rbk"]
+
+[ext_resource type="Script" uid="uid://dlgttb88rs41" path="res://scripts/conveyor.gd" id="1_fv2o1"]
+
+[node name="Convenyor" type="Control" unique_id=1450647467]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fv2o1")
+
+[node name="Background" type="ColorRect" parent="." unique_id=616027609]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BeltTrack" type="ColorRect" parent="." unique_id=1851136498]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+color = Color(0.34901962, 0.23137255, 0.21960784, 1)
+
+[node name="IngredientLayer" type="Control" parent="." unique_id=905446460]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=488960773]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=805673709]
+layout_mode = 2
+
+[node name="Heading" type="Label" parent="MarginContainer/VBoxContainer" unique_id=279512570]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "STAGE 1 - THE MIDNIGHT CONVEYOR"
+
+[node name="Instructions" type="Label" parent="MarginContainer/VBoxContainer" unique_id=377911389]
+layout_mode = 2
+text = "Collect the ingredients requested by Katlyne. Avoid unwanted ingredients!"
+autowrap_mode = 3
+
+[node name="OrderProgress" type="Label" parent="MarginContainer/VBoxContainer" unique_id=283092929]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Loading order..."
+
+[node name="PrepTray" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=572987741]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 6
+
+[node name="StatusLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1397820649]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Waiting for ingredients..."
+autowrap_mode = 3
+
+[node name="Spacer" type="Control" parent="MarginContainer/VBoxContainer" unique_id=1468690041]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="NextStageButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=2007635415]
+visible = false
+custom_minimum_size = Vector2(260, 60)
+layout_mode = 2
+text = "NEXT: BACKBOARD TOSS"
+
+[node name="BackButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=246315712]
+custom_minimum_size = Vector2(220, 60)
+layout_mode = 2
+text = "BACK TO STORY"

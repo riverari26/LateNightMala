@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://d4ijxqg7us47t"]
+
+[ext_resource type="Script" uid="uid://bdoq6tadxi465" path="res://scripts/backboard.gd" id="1_yt8n4"]
+
+[node name="Backboard" type="Control" unique_id=1937887043]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yt8n4")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=591877493]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.41873455, 0.028668445, 0.097514845, 1)
+
+[node name="StageInfo" type="Label" parent="." unique_id=25335103]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 28
+text = "STAGE 2 — THE BACKBOARD TOSS"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3

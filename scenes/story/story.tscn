@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://b401f6fpyha4c"]
+
+[ext_resource type="Script" uid="uid://bprsmjgigndo5" path="res://scripts/story.gd" id="1_i2dxj"]
+
+[node name="Story" type="Control" unique_id=138396387]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i2dxj")
+
+[node name="Background" type="ColorRect" parent="." unique_id=719600204]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.1573526, 0.09139191, 0.045754515, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=434144579]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1558524095]
+layout_mode = 2
+
+[node name="HeaderLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=2042144368]
+layout_mode = 2
+text = "LATE NIGHT MALA — NIGHT 1"
+
+[node name="OrdelPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=1249514384]
+visible = false
+layout_mode = 2
+
+[node name="OrderVBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/OrdelPanel" unique_id=1365630767]
+layout_mode = 2
+
+[node name="OrderHeading" type="Label" parent="MarginContainer/VBoxContainer/OrdelPanel/OrderVBox" unique_id=547287500]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "KATLYNE'S ORDER"
+
+[node name="OrderList" type="Label" parent="MarginContainer/VBoxContainer/OrdelPanel/OrderVBox" unique_id=1072110977]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Waiting for customer order..."
+autowrap_mode = 3
+
+[node name="Spacer" type="Control" parent="MarginContainer/VBoxContainer" unique_id=463729568]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SpeakerLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1614058965]
+layout_mode = 2
+text = "Katlyne"
+
+[node name="DialogueLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=61678148]
+layout_mode = 2
+text = "Excuse me... are you still open?"
+autowrap_mode = 3
+
+[node name="ChoiceRow" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=270193485]
+layout_mode = 2
+
+[node name="ChoiceLeft" type="Button" parent="MarginContainer/VBoxContainer/ChoiceRow" unique_id=1573997648]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Of course!"
+
+[node name="ChoiceRight" type="Button" parent="MarginContainer/VBoxContainer/ChoiceRow" unique_id=835602892]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Come on in!"

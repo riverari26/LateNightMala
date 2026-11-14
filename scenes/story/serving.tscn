@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://8ar4i0eojwl5"]
+
+[ext_resource type="Script" uid="uid://coyc54yre1d2h" path="res://scripts/serving.gd" id="1_axy83"]
+
+[node name="Serving" type="Control" unique_id=162334038]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_axy83")
+
+[node name="Background" type="ColorRect" parent="." unique_id=977284056]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2194084, 0.0934305, 0.020747483, 1)
+
+[node name="ServingLabel" type="Label" parent="." unique_id=604466198]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "THE HOTPOT IS READY!
+
+Next: Katlyne takes her first bite..."
+horizontal_alignment = 1
+vertical_alignment = 1
